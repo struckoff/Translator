@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
 import argparse
 from lib import GoogleTranslate, UrbanDict
 
@@ -27,19 +30,10 @@ def parse_args():
     ud_parser.add_argument('-c', '--count', action='store', type=int, dest='descr_count', help='count of descriptions to show', default=1)
     ud_parser.set_defaults(func=call_urban)
 
-    arguments_parser.add_argument('target', type=str, help='words')
+    arguments_parser.add_argument('target', type=str)
 
     return arguments_parser.parse_args()
 
-namespace = parse_args()
-namespace.func(namespace)
-
-# target = input(": ")
-# gt = GoogleTranslate(target)
-# gt.show()
-
-# ud = UrbanDict(target)
-# ud.show()
-
-# print(dir(parse_args()))
-# print(parse_args())
+if __name__ == '__main__':
+    namespace = parse_args()
+    namespace.func(namespace)
