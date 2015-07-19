@@ -4,7 +4,7 @@ from lib import GoogleTranslate, UrbanDict
 
 def call_google(namespace):
     gt = GoogleTranslate(namespace.target, namespace.frm, namespace.to)
-    return gt.show()
+    return gt.show(namespace.show_all)
 
 
 def call_urban(namespace):
@@ -19,6 +19,7 @@ def parse_args():
     gt_parser = subparsers.add_parser('google', help='use Google Translate')
     gt_parser.add_argument('-f', '--from', action='store', dest='frm', help='FROM', default='auto')
     gt_parser.add_argument('-t', '--to', action='store', dest='to', help='TO')
+    gt_parser.add_argument('-v', '--verbose', action='store_true', dest='show_all', help='show all translation variants', default=False)
     gt_parser.set_defaults(func=call_google)
 
     ud_parser = subparsers.add_parser('urban', help='use Urban Dictionary')

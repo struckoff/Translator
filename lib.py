@@ -66,16 +66,16 @@ class GoogleTranslate:
     def get_other_versions(self):
         return self.response[1]
 
-    def show(self):
-        print(self.get_main_translate())
-        print("-" * len(self.get_main_translate()))
-
-        for sub_type in self.get_other_versions():
-            if len(sub_type) > 1:
-                print(sub_type[0], ":")
-                for translate in sub_type[1]:
-                    print(" " * 4, translate)
-
+    def show(self, show_all):
+        if show_all:
+            for sub_type in self.get_other_versions():
+                if len(sub_type) > 1:
+                    print(sub_type[0], ":")
+                    for translate in sub_type[1]:
+                        print(" " * 4, translate)
+        else:
+            print(self.get_main_translate())
+            print("-" * len(self.get_main_translate()))
 
 class UrbanDict:
     def __init__(self, target):
