@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Translator by struckoff</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Translator</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/struckoff/Translator">View the Project on GitHub <small>struckoff/Translator</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/struckoff/Translator/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/struckoff/Translator/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/struckoff/Translator">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="simple-cli-dictionary-tool" class="anchor" href="#simple-cli-dictionary-tool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Simple cli dictionary tool</h1>
+
+<h2>
+<a id="info" class="anchor" href="#info" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Info</h2>
+
+<p>Simple command line application uses google translate to translate words
+  or urban dictionary to find descriptions  </p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>./translate.py -h
+usage: translate.py [-h] {google,urban} ... target
+
+positional arguments:
+  {google,urban}
+    google        use Google Translate
+    urban         use Urban Dictionary
+  target
+
+optional arguments:
+  -h, --help      show this help message and exit
+</code></pre>
+
+<h4>
+<a id="for-google-option" class="anchor" href="#for-google-option" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>for "google" option:</h4>
+
+<pre><code>usage: translate.py google [-h] [-f FRM] [-t TO] [-v]
+
+optional arguments:
+  -h, --help      show this help message and exit
+  -f , --from     FROM
+  -t , --to       TO
+  -v, --verbose   show all translation variants
+</code></pre>
+
+<h4>
+<a id="for-urban-option" class="anchor" href="#for-urban-option" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>for "urban" option:</h4>
+
+<pre><code>usage: translate.py google [-h] [-f FRM] [-t TO] [-v]
+
+optional arguments:
+  -h, --help          show this help message and exit
+  -f FRM, --from FRM  FROM
+  -t TO, --to TO      TO
+  -v, --verbose       show all translation variants
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/struckoff">struckoff</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

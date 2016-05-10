@@ -1,0 +1,6 @@
+{
+  "name": "Translator",
+  "tagline": "",
+  "body": "# Simple cli dictionary tool\r\n\r\n## Info\r\n\r\n  Simple command line application uses google translate to translate words\r\n  or urban dictionary to find descriptions  \r\n\r\n##Usage\r\n\r\n````\r\n./translate.py -h\r\nusage: translate.py [-h] {google,urban} ... target\r\n\r\npositional arguments:\r\n  {google,urban}\r\n    google        use Google Translate\r\n    urban         use Urban Dictionary\r\n  target\r\n\r\noptional arguments:\r\n  -h, --help      show this help message and exit\r\n````\r\n\r\n####for \"google\" option:\r\n\r\n````\r\nusage: translate.py google [-h] [-f FRM] [-t TO] [-v]\r\n\r\noptional arguments:\r\n  -h, --help      show this help message and exit\r\n  -f , --from     FROM\r\n  -t , --to       TO\r\n  -v, --verbose   show all translation variants\r\n````\r\n\r\n####for \"urban\" option:\r\n\r\n````\r\nusage: translate.py google [-h] [-f FRM] [-t TO] [-v]\r\n\r\noptional arguments:\r\n  -h, --help          show this help message and exit\r\n  -f FRM, --from FRM  FROM\r\n  -t TO, --to TO      TO\r\n  -v, --verbose       show all translation variants\r\n````\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
